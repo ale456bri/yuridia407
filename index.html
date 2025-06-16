@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INICIO | NOVEDADES YURI</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, lavender, lightcyan);
+      margin: 0;
+    }
+
+    header {
+      background-color: #512da8;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      background-color: #673ab7;
+    }
+
+    ul.menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu > li {
+      position: relative;
+    }
+
+    .menu > li > a {
+      display: block;
+      padding: 12px 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu > li > a::after {
+      content: " ▼";
+      font-size: 10px;
+      color: #d1c4e9;
+      transition: transform 0.3s;
+    }
+
+    .menu li:hover > a::after {
+      transform: rotate(180deg);
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      background: #ede7f6;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      top: 100%;
+      left: 0;
+      min-width: 160px;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .submenu li a {
+      display: block;
+      padding: 10px 15px;
+      color: #4527a0;
+      text-decoration: none;
+    }
+
+    .submenu li a:hover {
+      background-color: #d1c4e9;
+    }
+
+    .menu li:hover .submenu {
+      display: block;
+    }
+
+    .bienvenida {
+      text-align: center;
+      padding: 50px 20px;
+      color: #4527a0;
+    }
+
+    .bienvenida h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .bienvenida p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .boton-explorar {
+      background-color: #512da8;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .boton-explorar:hover {
+      background-color: #311b92;
+    }
+
+    .imagen-inicio {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      margin-top: 30px;
+    }
+
+    footer {
+      background-color: #4527a0;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NOVEDADES YURI</h1>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">INICIO</a></li>
+      <li>
+        <a href="regalos.html">🎁 REGALOS</a>
+        <ul class="submenu">
+          <li><a href="regalos.html#peluches">Peluches</a></li>
+          <li><a href="regalos.html#chocolates">Chocolates</a></li>
+          <li><a href="regalos.html#especiales">Especiales</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="promociones.html">🎉 PROMOCIONES</a>
+        <ul class="submenu">
+          <li><a href="promociones.html#2x1">Llévate 2x1</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="contacto.html">📞 CONTACTO</a>
+        <ul class="submenu">
+          <li><a href="contacto.html#formulario">Formulario</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="bienvenida">
+    <h2>¡Bienvenid@ a Novedades Yuri!</h2>
+    <p>Descubre los mejores regalos para cada ocasión. Peluches, chocolates, tazas personalizadas y mucho más te esperan.</p>
+    <a href="regalos.html" class="boton-explorar">Explorar Regalos</a>
+
+    <img src="CombodeCumpleanos-Bouquet12Rosas_Oso_Chocolates_GloboFelizCumpleanos_aa2affed-4d79-4197-b3ce-f7d47935b9db.webp" alt="Regalos de Novedades Yuri" class="imagen-inicio">
+  </section>
+
+  <footer>
+    <p>© 2025 NOVEDADES YURI | INICIO</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Promociones de Nuestra Tienda | Novedades Yuri</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #f3e5f5, #ede7f6);
+    }
+
+    header {
+      background-color: #6a1b9a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #7b1fa2;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    .menu > li {
+      position: relative;
+      margin: 0 20px;
+    }
+
+    .menu > li > a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .menu > li > a::after {
+      content: "▼";
+      font-size: 10px;
+      color: #e1bee7;
+      transition: transform 0.3s;
+    }
+
+    .menu li:hover > a::after {
+      transform: rotate(180deg);
+    }
+
+    .submenu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #f3e5f5;
+      list-style: none;
+      padding: 0;
+      display: none;
+      min-width: 160px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border-radius: 0 0 10px 10px;
+    }
+
+    .submenu li a {
+      color: #4a148c;
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+    }
+
+    .submenu li a:hover {
+      background-color: #ce93d8;
+    }
+
+    .menu li:hover .submenu {
+      display: block;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 30px;
+      color: #4a148c;
+    }
+
+    .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .arreglo {
+      background-color: white;
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .arreglo:hover {
+      transform: scale(1.05);
+    }
+
+    .arreglo img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .arreglo h3 {
+      color: #7b1fa2;
+      margin-top: 10px;
+    }
+
+    .arreglo p {
+      font-size: 14px;
+      color: #444;
+    }
+
+    footer {
+      background-color: #4a148c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>NOVEDADES YURI</h1>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">INICIO</a></li>
+      <li>
+       <a href="regalos.html">🎁 REGALOS</a>
+           <ul class="submenu">
+            <li><a href="regalos.html#peluches">Peluches</a></li>
+             <li><a href="regalos.html#chocolates">Chocolates</a></li>
+              <li><a href="regalos.html#especiales">Especiales</a></li>
+           </ul>
+          </li>
+          <li>
+        <a href="contacto.html"> 📞 CONTACTO</a>
+        <ul class="submenu">
+          <li><a href="contacto.html">Formulario</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <h2>PROMOCIONES DE NUESTRA TIENDA</h2>
+
+  <div class="contenedor">
+    <div class="arreglo">
+      <img src="images (1).jpeg" alt="Caja de Regalo Amor">
+      <h3>CAJA DE REGALO AMOR</h3>
+      <p>¡Solo $299 MXN! Incluye peluche, dulce y tarjeta personalizada.</p>
+    </div>
+
+    <div class="arreglo">
+      <img src="cadap.jpg" alt="Set Aromático">
+      <h3>SET AROMÁTICO</h3>
+      <p>Promoción 2x1 en velas y difusores. ¡Relájate o regala paz!</p>
+    </div>
+
+    <div class="arreglo">
+      <img src="images.jpeg" alt="Mug Creativo">
+      <h3>TAZA CREATIVA</h3>
+      <p>Gratis tarjeta decorada en la compra de cualquier taza personalizada.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 NOVEDADES YURI | PROMOCIONES</p>
+  </footer>
+
+</body>
+</html>
